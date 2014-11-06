@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Workout Tracker</string>
+	<!-- Main activity -->
+	<string name="main_weight_button">Record Body Weight</string>
+	<string name="main_workouts_button">Workouts</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
