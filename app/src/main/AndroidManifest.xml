@@ -7,15 +7,22 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
         <activity
-            android:name=".MainActivity"
+            android:name="com.jamesrskemp.workouttracker.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jamesrskemp.workouttracker.CreateBodyWeight"
+            android:label="@string/title_activity_create_body_weight"
+            android:parentActivityName="com.jamesrskemp.workouttracker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jamesrskemp.workouttracker.MainActivity" />
         </activity>
     </application>
 

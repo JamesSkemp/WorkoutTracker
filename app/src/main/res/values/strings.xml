@@ -2,11 +2,12 @@
 <resources>
 
     <string name="app_name">Workout Tracker</string>
-	<!-- Main activity -->
-	<string name="main_weight_button">Record Body Weight</string>
-	<string name="main_workouts_button">Workouts</string>
-
+    <!-- Main activity -->
+    <string name="main_weight_button">Record Body Weight</string>
+    <string name="main_workouts_button">Workouts</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_create_body_weight">Record Body Weight</string>
+	<string name="create_body_weight_button">Record Weight</string>
 
 </resources>
