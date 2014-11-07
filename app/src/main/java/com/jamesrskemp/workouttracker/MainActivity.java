@@ -37,7 +37,12 @@ public class MainActivity extends Activity {
     }
 
 	public void navigateToCreateBodyWeight(View view) {
-		Intent intent = new Intent(this, CreateBodyWeight.class);
+		Intent intent = new Intent(this, CreateBodyWeightActivity.class);
+		startActivity(intent);
+	}
+
+	public void navigateToBodyWeightHistory(View view) {
+		Intent intent = new Intent(this, BodyWeightHistoryActivity.class);
 		startActivity(intent);
 	}
 

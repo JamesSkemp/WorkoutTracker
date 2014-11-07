@@ -11,4 +11,7 @@
 
 	<!-- add body weight -->
 	<dimen name="create_body_text_margin_top">32dp</dimen>
+
+	<!-- list body weights -->
+	<dimen name="list_body_weight_text_weight">42sp</dimen>
 </resources>

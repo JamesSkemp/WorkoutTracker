@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.jamesrskemp.workouttracker.db.BodyWeightDataSource;
 
 
-public class CreateBodyWeight extends Activity {
+public class CreateBodyWeightActivity extends Activity {
 	BodyWeightDataSource dataSource;
 
 	@Override
@@ -68,10 +68,8 @@ public class CreateBodyWeight extends Activity {
 
 			Toast.makeText(this, "Body weight id " + newBodyWeightId, Toast.LENGTH_SHORT).show();
 
-			Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+			Intent intent = new Intent(getApplicationContext(), BodyWeightHistoryActivity.class);
 			startActivity(intent);
-			// TODO redirect to view list of body weights
-
 		}
 	}
 }

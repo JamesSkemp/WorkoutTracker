@@ -17,8 +17,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.jamesrskemp.workouttracker.CreateBodyWeight"
+            android:name=".CreateBodyWeightActivity"
             android:label="@string/title_activity_create_body_weight"
+            android:parentActivityName="com.jamesrskemp.workouttracker.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jamesrskemp.workouttracker.MainActivity" />
+        </activity>
+        <activity
+            android:name=".BodyWeightHistoryActivity"
+            android:label="@string/title_activity_body_weight_history"
             android:parentActivityName="com.jamesrskemp.workouttracker.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

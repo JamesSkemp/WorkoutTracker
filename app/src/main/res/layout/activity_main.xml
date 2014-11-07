@@ -28,6 +28,7 @@
 	    android:layout_marginTop="@dimen/main_button_margin_top"
 	    android:layout_below="@id/record_weight"
 	    android:textSize="@dimen/extra_large_text_size"
+	    android:onClick="navigateToBodyWeightHistory"
 		/>
 
 	<Button
@@ -39,5 +40,6 @@
 		android:layout_marginTop="@dimen/main_button_margin_top"
 	    android:layout_below="@id/view_weights"
 	    android:textSize="@dimen/extra_large_text_size"
+	    android:onClick="navigateToWorkouts"
 		/>
 </RelativeLayout>
