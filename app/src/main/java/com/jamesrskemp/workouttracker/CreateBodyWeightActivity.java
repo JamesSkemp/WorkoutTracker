@@ -3,6 +3,7 @@ package com.jamesrskemp.workouttracker;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,6 +14,7 @@ import com.jamesrskemp.workouttracker.db.BodyWeightDataSource;
 
 
 public class CreateBodyWeightActivity extends Activity {
+	public static final String LOG_TAG = "JAMESRSKEMP";
 	BodyWeightDataSource dataSource;
 
 	@Override
@@ -60,16 +62,23 @@ public class CreateBodyWeightActivity extends Activity {
 
 	public void recordBodyWeight(View view) {
 		EditText editTextBodyWeight = (EditText)findViewById(R.id.edit_body_weight);
-		Long bodyWeight = Long.parseLong(editTextBodyWeight.getText().toString());
 
-		if (bodyWeight > 0) {
-			dataSource.open();
-			long newBodyWeightId = dataSource.create(bodyWeight);
+		try {
+			Long bodyWeight = Long.parseLong(editTextBodyWeight.getText().toString());
 
-			Toast.makeText(this, "Body weight id " + newBodyWeightId, Toast.LENGTH_SHORT).show();
+			if (bodyWeight > 0) {
+				dataSource.open();
+				long newBodyWeightId = dataSource.create(bodyWeight);
 
-			Intent intent = new Intent(getApplicationContext(), BodyWeightHistoryActivity.class);
-			startActivity(intent);
+				Toast.makeText(this, "Body weight id " + newBodyWeightId, Toast.LENGTH_SHORT).show();
+
+				Intent intent = new Intent(getApplicationContext(), BodyWeightHistoryActivity.class);
+				startActivity(intent);
+			}
 		}
+		catch (Exception ex) {
+			Log.i(LOG_TAG, ex.getMessage());
+		}
+
 	}
 }
