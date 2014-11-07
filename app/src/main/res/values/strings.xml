@@ -12,7 +12,8 @@
     <string name="title_activity_body_weight_history">Body Weight History</string>
     <string name="title_activity_workouts">Workouts</string>
     <string name="title_activity_exercises">Exercises</string>
-	<string name="button_create_exercise">Create an Exercise</string>
-	<string name="button_create_workout">Create a Workout</string>
+    <string name="button_create_exercise">Create an Exercise</string>
+    <string name="button_create_workout">Create a Workout</string>
+    <string name="title_activity_create_exercise">Create an Exercise</string>
 
 </resources>

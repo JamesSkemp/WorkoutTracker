@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:orientation="vertical"
+                tools:context="com.jamesrskemp.workouttracker.CreateExerciseActivity">
+
+	<EditText
+		android:id="@+id/exercise_create_name"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/create_body_text_margin_top"
+	    android:hint="Exercise name"
+	    android:inputType="textCapWords"
+		/>
+
+	<EditText
+		android:id="@+id/exercise_create_notes"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:layout_below="@id/exercise_create_name"
+	    android:layout_marginTop="@dimen/create_body_text_margin_top"
+	    android:hint="Optional notes"
+	    android:inputType="textCapSentences"
+		/>
+
+	<CheckBox
+		android:id="@+id/exercise_create_has_weight"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:layout_below="@id/exercise_create_notes"
+	    android:layout_marginTop="@dimen/create_body_text_margin_top"
+	    android:hint="Uses weight(s)"
+	    android:checked="true"
+		/>
+
+	<Button
+		android:text="@string/button_create_exercise"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/exercise_create_has_weight"
+		android:layout_marginTop="@dimen/create_body_text_margin_top"
+		android:layout_centerInParent="true"
+	    android:textSize="@dimen/extra_large_text_size"
+	    android:onClick="createNewExercise"
+		/>
+</RelativeLayout>

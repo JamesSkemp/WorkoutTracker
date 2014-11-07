@@ -1,9 +1,11 @@
 package com.jamesrskemp.workouttracker;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -67,5 +69,10 @@ public class ExercisesActivity extends Activity {
 	protected void onPause() {
 		super.onPause();
 		dataSource.close();
+	}
+
+	public void navigateToCreateExercise(View view) {
+		Intent intent = new Intent(this, CreateExerciseActivity.class);
+		startActivity(intent);
 	}
 }

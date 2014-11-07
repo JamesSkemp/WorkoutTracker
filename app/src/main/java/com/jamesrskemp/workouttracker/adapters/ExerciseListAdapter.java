@@ -33,7 +33,11 @@ public class ExerciseListAdapter extends ArrayAdapter<Exercise> {
 		weight.setText(item.getName());
 
 		TextView date = (TextView)convertView.findViewById(R.id.list_exercise_notes);
-		date.setText(item.getNotes());
+		if (item.getNotes().isEmpty()) {
+			date.setVisibility(View.GONE);
+		} else {
+			date.setText(item.getNotes());
+		}
 
 		return convertView;
 	}

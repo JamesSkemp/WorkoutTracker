@@ -60,7 +60,8 @@ public class ExerciseDataSource {
 		String exercisesListSelectQuery = "SELECT "
 				+ DatabaseHelper.TABLE_EXERCISE + "." + DatabaseHelper.EXERCISE_COLUMN_ID + ", "
 				+ DatabaseHelper.TABLE_EXERCISE + "." + DatabaseHelper.EXERCISE_COLUMN_NAME + ", "
-				+ DatabaseHelper.TABLE_EXERCISE + "." + DatabaseHelper.EXERCISE_COLUMN_NOTES + " "
+				+ DatabaseHelper.TABLE_EXERCISE + "." + DatabaseHelper.EXERCISE_COLUMN_NOTES + ", "
+				+ DatabaseHelper.TABLE_EXERCISE + "." + DatabaseHelper.EXERCISE_COLUMN_HAS_WEIGHT + " "
 				+ "FROM " + DatabaseHelper.TABLE_EXERCISE
 				+ " ORDER BY " + DatabaseHelper.TABLE_EXERCISE + "." + DatabaseHelper.EXERCISE_COLUMN_NAME
 				+ ";";
