@@ -70,7 +70,8 @@ public class CreateBodyWeightActivity extends Activity {
 				dataSource.open();
 				long newBodyWeightId = dataSource.create(bodyWeight);
 
-				Toast.makeText(this, "Body weight id " + newBodyWeightId, Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, "Body weight recorded.", Toast.LENGTH_SHORT).show();
+				Log.i(LOG_TAG, "Body weight created: " + Long.toString(newBodyWeightId));
 
 				Intent intent = new Intent(getApplicationContext(), BodyWeightHistoryActivity.class);
 				startActivity(intent);
