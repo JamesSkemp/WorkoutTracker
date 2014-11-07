@@ -47,6 +47,12 @@ public class MainActivity extends Activity {
 	}
 
 	public void navigateToWorkouts(View view) {
-		// TODO navigate
+		Intent intent = new Intent(this, WorkoutsActivity.class);
+		startActivity(intent);
+	}
+
+	public void navigateToExercises(View view) {
+		Intent intent = new Intent(this, ExercisesActivity.class);
+		startActivity(intent);
 	}
 }

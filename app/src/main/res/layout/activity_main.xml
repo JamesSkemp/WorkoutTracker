@@ -11,7 +11,7 @@
 	<Button
 		android:id="@+id/record_weight"
 		android:text="@string/main_weight_button"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="@dimen/main_button_margin_top"
@@ -22,7 +22,7 @@
 	<Button
 		android:id="@+id/view_weights"
 		android:text="Body Weight History"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 	    android:layout_centerHorizontal="true"
 	    android:layout_marginTop="@dimen/main_button_margin_top"
@@ -34,12 +34,24 @@
 	<Button
 		android:id="@+id/view_workouts"
 		android:text="@string/main_workouts_button"
-		android:layout_width="fill_parent"
+		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:layout_centerHorizontal="true"
 		android:layout_marginTop="@dimen/main_button_margin_top"
 	    android:layout_below="@id/view_weights"
 	    android:textSize="@dimen/extra_large_text_size"
 	    android:onClick="navigateToWorkouts"
+		/>
+
+	<Button
+		android:id="@+id/view_exercises"
+		android:text="Exercises"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:layout_marginTop="@dimen/main_button_margin_top"
+	    android:layout_below="@id/view_workouts"
+	    android:textSize="@dimen/extra_large_text_size"
+	    android:onClick="navigateToExercises"
 		/>
 </RelativeLayout>
